@@ -1,13 +1,39 @@
+<!DOCTYPE html>
 <html>
-    <head>
+<head>
+    <title>Image Animation</title>
 
-    </head>
+    <style>
+        .bounce-image {
+            width: 300px;
 
-    <body>
-          <div>
-            <h1>Images in HTML</h1>
-            <img src="merry-marbling.png" alt="Image">
-        </div>
-        
-    </body>
+            /* Animation */
+            animation: bounce 3s ease-in-out infinite alternate;
+        }
+
+        @keyframes bounce {
+            from {
+                transform: translateX(0);
+            }
+
+            to {
+                transform: translateX(500px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <h1>Images in HTML</h1>
+
+        <img 
+            src="merry-marbling.png" 
+            alt="Image" 
+            class="bounce-image"
+        >
+    </div>
+
+</body>
 </html>
